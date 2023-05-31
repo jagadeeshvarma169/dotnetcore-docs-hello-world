@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build and publish  an image
       inputs:
-        containerRegistry: 'Dockerhub'
+        containerRegistry: 'DockerHub'
         repository: 'jagadeeshvarma169'
         command: 'buildAndPush'
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile.linux'
