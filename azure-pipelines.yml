@@ -21,12 +21,10 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build an image
+      displayName: Build and publish  an image
       inputs:
         containerRegistry: 'Dockerhub'
         repository: 'jagadeeshvarma169'
         command: 'buildAndPush'
-       
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile.linux'
-        tags: |
-          $(tag)
+        
