@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry-1.docker.io/jagadeeshvarma169/test1
+  repository: docker.io/jagadeeshvarma169/test1
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
